@@ -18,10 +18,7 @@ class stockcontroller extends Controller
         $prtstock = DB::table('tbl_stocks') 
                     ->join('tbl_barangs','tbl_stocks.KODEBRG','=','tbl_barangs.KODEBRG')
                     ->get();
-                          
-        
-        
-
+                    
         $mpdf = new \Mpdf\Mpdf();
         $mpdf->WriteHTML(view("print_pdf",['title' =>'Daftar Stock'],compact('prtstock')));
         $mpdf->Output();                  

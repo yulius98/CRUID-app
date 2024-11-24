@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PembelianController;
 use App\Http\Controllers\stockcontroller;
 use App\Models\tbl_barang;
 use App\Models\tbl_suplier;
@@ -13,9 +14,7 @@ Route::get('/',[tbl_barangcontroller::class,'Index']);
 
 Route::get('/daftar_suplier',[tbl_supliercontroller::class,'Index']);
 
-Route::get('/daftar_pembelian', function () {
-    return view('daftar_pembelian', ['title' =>'Daftar Pembelian']);
-});
+Route::get('/daftar_pembelian',[PembelianController::class,'DaftarPembelian']);
 
 Route::get('/daftar_stock',[tbl_stockcontroller::class,'Index']);
 
