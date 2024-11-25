@@ -19,7 +19,7 @@
                     <td class="border border-gray-300 px-4 py-2 font-medium text-gray-500">{{ $brg->KODEBRG  }}</td>
                     <td class="border border-gray-300 px-4 py-2 font-medium text-gray-500">{{ $brg->NAMABRG }}</td>
                     <td class="border border-gray-300 px-4 py-2 font-medium text-gray-500">{{ $brg->SATUAN  }}</td>
-                    <td class="border border-gray-300 px-4 py-2 font-medium text-gray-500">{{ $brg->HARGABELI }}</td>
+                    <td class="border border-gray-300 px-4 py-2 font-medium text-gray-500">Rp {{ number_format((float)$brg->HARGABELI,0, ',', '.') }}</td>
 
                 </tr>    
                 </tbody>

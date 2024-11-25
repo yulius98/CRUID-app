@@ -4,7 +4,7 @@
         <div class="card">
             <div class="card-header">
                 Data Pembelian
-                <button class="btn btn-danger gap-x-1.5 rounded-md bg-gray-400 px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-800 hover:bg-gray-700" onclick="window.location.href='#'">Add</button>
+                 <button class="btn btn-danger gap-x-1.5 rounded-md bg-gray-400 px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-800 hover:bg-gray-700" onclick="window.location.href='#'">Add</button>
             </div>
             <div class="card-body">
                 <table>
@@ -31,7 +31,7 @@
                             <td class="border border-gray-300 px-4 py-2 font-medium text-gray-500">{{ $dtbeli->KODEBRG}}</td>
                             <td class="border border-gray-300 px-4 py-2 font-medium text-gray-500">{{ $dtbeli->QTY}}</td>
                             <td class="border border-gray-300 px-4 py-2 font-medium text-gray-500">{{ $dtbeli->DISKON}}</td>
-                            <td class="border border-gray-300 px-4 py-2 font-medium text-gray-500">{{ $dtbeli->TOTALRP}}</td>
+                            <td class="border border-gray-300 px-4 py-2 font-medium text-gray-500">Rp {{ number_format((float)$dtbeli->TOTALRP,0, ',', '.')}}</td>
                             <td class="border border-gray-300 px-4 py-2 font-medium text-gray-500">
                                 <div class="d-flex justify-content-between mb-3">
                                     <button class="btn btn-danger gap-x-1.5 rounded-md bg-gray-400 px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-800 hover:bg-gray-700" onclick="window.location.href='#'">Edit</button>
