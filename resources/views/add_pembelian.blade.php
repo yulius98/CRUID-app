@@ -2,13 +2,15 @@
     <x-slot:title>{{ $title }}</x-slot:title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <form>
-        <div class="space-y-8">
+        <div class="space-y-2">
           <div class="border-b border-gray-900/10 pb-12">
-            <div class="container mx-auto mt-5 p-5 bg-white rounded shadow"> 
+            <div class="container" > 
                 <h2 class="text-lg font-semibold text-gray-900">No Transaksi</h2> 
                 <p class="mt-1 text-sm text-gray-600" id="nomorTransaksi">Bxxxx</p> 
-                <button id="generateTransaksi" class="mt-3 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">
-                    Generate Nomor Transaksi</button> 
+                <button id="generateTransaksi" class="mt-2 px-2 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+                        Generate Nomor Transaksi
+                </button>
+                 
             </div> 
             <script> 
                 let urut = 1; 
@@ -25,7 +27,7 @@
                 document.getElementById('generateTransaksi').addEventListener('click', function(event) { event.preventDefault(); 
                 generateNomorTransaksi(); }); </script>
             
-            <h3 class="text-base/7 font-semibold text-gray-900">Tanggal Pembelian</h3>
+            <h3 class="mt-5 text-base/7 font-semibold text-gray-900">Tanggal Pembelian</h3>
             <p class="mt-1 text-sm/6 text-gray-600">{{ \Illuminate\Support\Facades\Date::now()->format('d/m/Y') }}</p>
           
           
