@@ -4,8 +4,9 @@
         <div class="card">
             <div class="card-header">
                 Data Pembelian
-                 <button class="btn btn-danger gap-x-1.5 rounded-md bg-gray-400 px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-800 hover:bg-gray-700" onclick="window.location.href='#'">Add</button>
+                 <button class="btn btn-danger gap-x-1.5 rounded-md bg-gray-400 px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-800 hover:bg-gray-700 add-pembelian" onclick="window.location.href='/add_pembelian'">Add</button>
             </div>
+            
             <div class="card-body">
                 <table>
                     <thead>
@@ -50,7 +51,6 @@
                 </table>
             </div>        
         </div>
-        
-        
     </div>
+    
 </x-layot>

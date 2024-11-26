@@ -21,3 +21,7 @@ Route::get('/daftar_stock',[tbl_stockcontroller::class,'Index']);
 Route::get('/export-pdf',[stockcontroller::class,'exportPdf'])->name('export.pdf');
 
 Route::get('/export-excel',[stockcontroller::class,'exportExcel'])->name('export.excel');
+
+Route::get('/add_pembelian',function(){
+    return view('add_pembelian',['title'=> 'Pembelian']);
+});
