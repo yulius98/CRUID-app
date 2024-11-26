@@ -54,17 +54,29 @@
                   <input id="nama-brg" name="nama-brg" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6">
                 </div>
               </div>
-      
-              <!-- <div class="sm:col-span-3">
-                <label for="country" class="block text-sm/6 font-medium text-gray-900">Country</label>
+
+              <!-- <div class="sm:col-span-4 sm:col-start-4">
+                <label for="email" class="block text-sm/6 font-medium text-gray-900">Satuan</label>
                 <div class="mt-2">
-                  <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm/6">
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
+                  <input id="satuan" name="satuan" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6">
                 </div>
               </div> -->
+      
+              <div class="sm:col-span-4 sm:col-start-4">
+                <label for="satuan" class="block text-sm/6 font-medium text-gray-900">Satuan</label>
+                <div class="mt-2">
+                  <select id="kode-satuan" name="kode-satuan" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm/6">
+                    <option>PCS</option>
+                    <option>KG</option>
+                    <option>L</option>
+                    <option>M</option>
+                    <option>BOX</option>
+                    <option>PACK</option>
+                    <option>DOZ</option>
+                    <option>SET</option>
+                  </select>
+                </div>
+              </div>
 
               <div class="sm:col-span-1 sm:col-start-1">
                 <label for="email" class="block text-sm/6 font-medium text-gray-900">Jumlah Barang</label>

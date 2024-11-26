@@ -1,10 +1,14 @@
 <x-layot>
     <x-slot:title>{{ $title }}</x-slot:title>
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-4 py-4">
+        <div class="card-header">
+            <button class="btn btn-danger gap-x-1.5 rounded-md bg-blue-400 px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-blue-800 hover:bg-blue-700 add-pembelian" onclick="window.location.href='/add_pembelian'">Tambah Pembelian</button>
+        </div>
+    </div>
+    <div class="container mx-auto px-4">
         <div class="card">
             <div class="card-header">
                 Data Pembelian
-                 <button class="btn btn-danger gap-x-1.5 rounded-md bg-gray-400 px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-800 hover:bg-gray-700 add-pembelian" onclick="window.location.href='/add_pembelian'">Add</button>
             </div>
             
             <div class="card-body">
