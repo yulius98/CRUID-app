@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class tbl_stock extends Model
 {
     protected $table = 'tbl_stocks';
-    protected $primaryKey = 'KODEBRG';
+    protected $fillable=['KODEBRG','QTY'];
+    public $timestamps = false;
 }

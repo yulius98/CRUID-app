@@ -22,6 +22,10 @@ Route::get('/export-pdf',[stockcontroller::class,'exportPdf'])->name('export.pdf
 
 Route::get('/export-excel',[stockcontroller::class,'exportExcel'])->name('export.excel');
 
+Route::get('/daftar_pembelian/TambahPembelian',[PembelianController::class,'TambahPembelian']);
+
+Route::post('/add_pembelian',[PembelianController::class,'simpan']);
+
 Route::get('/add_pembelian',function(){
     return view('add_pembelian',['title'=> 'Pembelian']);
 });

@@ -10,8 +10,8 @@
 				<div class="ml-10 flex items-baseline space-x-4">
 					<!-- Links -->
 					<a href="/" class="{{ request()->is('/') ? 'bg-white-800 text-white' : 'text-white hover:bg-gray-600 hover:text-white' }} px-3 py-2 rounded-md text-sm font-medium transition duration-200 ease-in-out">BARANG</a>
-					<a href="/daftar_suplier" class="{{ request()->is('/daftar_suplier') ? 'bg-white-800 text-white' : 'text-white hover:bg-gray-600 hover:text-white' }} px-3 py-2 rounded-md text-sm font-medium transition duration-200 ease-in-out">SUPLIER</a>
 					<a href="/daftar_pembelian" class="{{ request()->is('/daftar_pembelian') ? 'bg-white-800 text-white' : 'text-white hover:bg-gray-600 hover:text-white' }} px-3 py-2 rounded-md text-sm font-medium transition duration-200 ease-in-out">PEMBELIAN</a>
+					<a href="/daftar_suplier" class="{{ request()->is('/daftar_suplier') ? 'bg-white-800 text-white' : 'text-white hover:bg-gray-600 hover:text-white' }} px-3 py-2 rounded-md text-sm font-medium transition duration-200 ease-in-out">SUPLIER</a>
 					<a href="/daftar_stock" class="{{ request()->is('/daftar_stock') ? 'bg-white-800 text-white' : 'text-white hover:bg-gray-600 hover:text-white' }} px-3 py-2 rounded-md text-sm font-medium transition duration-200 ease-in-out">STOCK</a>
 					
 				</div>
@@ -37,8 +37,8 @@
 	<div x-show="isOpen" class="md:hidden">
 		<div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
 			<a href="/" class="{{ request()->is('/') ? 'bg-white-800 text-white' : 'text-white hover:bg-gray-600 hover:text-white' }} px-3 py-2 rounded-md text-sm font-medium transition duration-200 ease-in-out">BARANG</a>
-			<a href="/daftar_suplier" class="{{ request()->is('/daftar_suplier') ? 'bg-white-800 text-white' : 'text-white hover:bg-gray-600 hover:text-white' }} px-3 py-2 rounded-md text-sm font-medium transition duration-200 ease-in-out">SUPLIER</a>
 			<a href="/daftar_pembelian" class="{{ request()->is('/daftar_pembelian') ? 'bg-white-800 text-white' : 'text-white hover:bg-gray-600 hover:text-white' }} px-3 py-2 rounded-md text-sm font-medium transition duration-200 ease-in-out">PEMBELIAN</a>
+			<a href="/daftar_suplier" class="{{ request()->is('/daftar_suplier') ? 'bg-white-800 text-white' : 'text-white hover:bg-gray-600 hover:text-white' }} px-3 py-2 rounded-md text-sm font-medium transition duration-200 ease-in-out">SUPLIER</a>
 			<a href="/daftar_stock" class="{{ request()->is('/daftar_stock') ? 'bg-white-800 text-white' : 'text-white hover:bg-gray-600 hover:text-white' }} px-3 py-2 rounded-md text-sm font-medium transition duration-200 ease-in-out">STOCK</a>
 									
 		</div>
