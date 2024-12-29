@@ -5,7 +5,6 @@
         @csrf
         <div class="space-y-2">
           <div class="border-b border-gray-900/10 pb-12">
-            
             <div>
               <p class="mt-1 text-sm text-gray-600" id="nomorTransaksi" name="nomorTransaksi">Bxxxx</p>
               <input type="hidden" id="NOTRANSAKSI" name="NOTRANSAKSI" value="">
@@ -14,26 +13,26 @@
               </button>
           </div>
           <script>
-              let urut = 1;
-              function generateNomorTransaksi() {
-                  const date = new Date();
-                  const tahun = date.getFullYear();
-                  const bulan = ('0' + (date.getMonth() + 1)).slice(-2);
-                  const nomorUrut = ('000' + urut).slice(-3);
-                  const nomorTransaksi = `B${tahun}${bulan}${nomorUrut}`;
-                  document.getElementById('nomorTransaksi').innerText = nomorTransaksi;
-                  document.getElementById('NOTRANSAKSI').value = nomorTransaksi;
-                  urut++;
-              }
-          
-              document.addEventListener('DOMContentLoaded', (event) => {
-                  generateNomorTransaksi();
-              });
-              document.getElementById('generateTransaksi').addEventListener('click', function(event) {
-                  event.preventDefault();
-                  generateNomorTransaksi();
-              });
-          </script>
+            let urut = 1;
+            function generateNomorTransaksi() {
+                const date = new Date();
+                const tahun = date.getFullYear();
+                const bulan = ('0' + (date.getMonth() + 1)).slice(-2);
+                const nomorUrut = ('000' + urut).slice(-3);
+                const nomorTransaksi = `B${tahun}${bulan}${nomorUrut}`;
+                document.getElementById('nomorTransaksi').innerText = nomorTransaksi;
+                document.getElementById('NOTRANSAKSI').value = nomorTransaksi;
+                urut++;
+            }
+        
+            document.addEventListener('DOMContentLoaded', (event) => {
+                generateNomorTransaksi();
+            });
+            document.getElementById('generateTransaksi').addEventListener('click', function(event) {
+                event.preventDefault();
+                generateNomorTransaksi();
+            });
+        </script>
           
 
 

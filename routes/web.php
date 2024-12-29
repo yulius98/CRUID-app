@@ -29,3 +29,15 @@ Route::post('/add_pembelian',[PembelianController::class,'simpan']);
 Route::get('/add_pembelian',function(){
     return view('add_pembelian',['title'=> 'Pembelian']);
 });
+
+Route::get('/get-last-transaction', [PembelianController::class, 'getLastTransactionNumber']);
+
+Route::get('/edit_pembelian/{notransaksi}', [PembelianController::class, 'edit_pembelian']);
+
+Route::resource('pembelian', PembelianController::class);
+
+Route::put('/pembelian/{NOTRANSAKSI}', [PembelianController::class, 'update']);
+
+Route::delete('/delete_pembelian/{NOTRANSAKSI}/{KODEBRG}/{QTY}', [PembelianController::class, 'destroy']);
+
+
